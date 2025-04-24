@@ -1,0 +1,29 @@
+{
+  "name": "api-mongo",
+  "version": "1.0.0",
+  "description": "API com MongoDB e Mongoose das aulas do professor Emerson",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API",
+    "Mongo",
+    "Mongoose",
+    "Express"
+  ],
+  "author": "Thiago Diegoli",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.13.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
