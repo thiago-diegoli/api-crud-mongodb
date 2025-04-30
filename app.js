@@ -32,7 +32,7 @@ mongoose
   .catch((erro) => console.error(erro));
 
 const usuarioSchema = new mongoose.Schema({
-  name: String,
+  nome: String,
   idade: Number,
   sexo: String,
 });
@@ -55,10 +55,10 @@ app.get("/", async (req, res) => {
 // POST
 app.post("/add", async (req, res) => {
   try {
-    const { name, idade, sexo } = req.body;
+    const { nome, idade, sexo } = req.body;
 
     const novoUsuario = new Usuario({
-      name,
+      nome,
       idade,
       sexo,
     });
